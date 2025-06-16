@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS 🌐 - Login</title>
+  <style>
+    body {
+      background: url('img/12.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+}
+
+.login-container {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 30px 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+      color: white;
+}
+
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+}
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+}
+
+    button {
+      background: linear-gradient(45deg, #ff6b6b, #556270);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+}
+
+    button:hover {
+      background: linear-gradient(45deg, #ff3e3e, #334151);
+}
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>NEXUS 🌐</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Usuário" required>
+      <input type="password" id="password" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <script>
+    document.querySelector("#loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      let username = document.querySelector("#username").value;
+      let password = document.querySelector("#password").value;
+
+      if (username === "Nexus" && password === "1212") {
+        window.location.href = "base.html";
+} else {
+        alert("Intruso, Agora seu celular leva ban seu fldpt☠️!");
+}
+});
+  </script>
+</body>
+</html>
