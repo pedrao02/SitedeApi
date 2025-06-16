@@ -1,29 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
- <title>Meu Site</title>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Painel Nexus</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 24px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 50px 0;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
- <header>
- <nav>
- <ul>
- <li><a href="                
- <li><a href="#">Sobre</a></li>
- <li><a href="#">Contato</a></li>
- </ul>
- </nav>
- </header>
- <main>
- <section>
- <h1>Bem-vindo ao meu site!</h1>
- <p>Este é um site de exemplo.</p>
- </section>
- </main>
- <footer>
- <p>&copy; 2023 Meu Site</p>
- </footer>
+
+<header>Painel Nexus</header>
+
+<div class="container">
+  <div class="card"><a href="https://www.google.com" target="_blank">Google</a></div>
+  <div class="card"><a href="https://www.bing.com" target="_blank">Bing</a></div>
+  <div class="card"><a href="https://chat.openai.com" target="_blank">ChatGPT</a></div>
+  <div class="card"><a href="https://www.facebook.com" target="_blank">Facebook</a></div>
+  <div class="card"><a href="https://www.instagram.com" target="_blank">Instagram</a></div>
+</div>
+
+<footer>Nexus ☠️ 01</footer>
+
 </body>
 </html>
+
+
